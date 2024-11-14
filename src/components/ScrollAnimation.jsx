@@ -98,7 +98,7 @@ const ScrollAnimation = () => {
           <div className="w-screen p-12 h-[90vh] mx-12 rounded-3xl inline bg-white items-center justify-center">
             <div className="text-[15vh] font-semibold font-gilroy flex items-center">
               REACH ME OUT
-              <img src="src/assets/reach.svg" alt="Reach Logo" className="ml-4 h-[18vh]" />
+              <img src="../assets/reach.svg" alt="Reach Logo" className="ml-4 h-[18vh]" />
             </div>
             
             {/* Page View Count Section */}

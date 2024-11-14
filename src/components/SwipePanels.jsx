@@ -36,7 +36,7 @@ const SwipePanels = () => {
           <div
             className="absolute inset-0 bg-cover bg-center "
             style={{ 
-              backgroundImage: "url('/src/assets/singing.jpg')",
+              backgroundImage: "url('../assets/singing.jpg')",
               filter: 'grayscale(100%)'
               
             }}
@@ -51,7 +51,7 @@ const SwipePanels = () => {
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{ 
-              backgroundImage: "url('/src/assets/art.jpg')",
+              backgroundImage: "url('../assets/art.jpg')",
               filter: 'grayscale(100%)'
             }}
           />
@@ -65,7 +65,7 @@ const SwipePanels = () => {
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{ 
-              backgroundImage: "url('/src/assets/guitar.jpg')",
+              backgroundImage: "url('../assets/guitar.jpg')",
               filter: 'grayscale(100%)'
             }}
           />
@@ -79,7 +79,7 @@ const SwipePanels = () => {
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{ 
-              backgroundImage: "url('/src/assets/photography.jpg')",
+              backgroundImage: "url('../assets/photography.jpg')",
               filter: 'grayscale(100%)'
             }}
           />
