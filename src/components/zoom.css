@@ -1,0 +1,43 @@
+:root {
+    --section-padding: 30px;
+  }
+  body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+  }
+  .container-fluid {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  main {
+    overflow: hidden;
+  }
+  section {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    position: relative;
+  }
+  #site-video {
+    .video {
+      background-color: #000;
+      padding-top: 56.65%;
+      position: relative;
+      overflow: hidden;
+    }
+  }
+  #services {
+    font-size: 86px;
+    font-size: clamp(32px, 6.29575vw, 120px);
+    line-height: 0.7;
+    text-transform: uppercase;
+  
+    .container-fluid {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+   
+    span {
+      white-space: nowrap;
+      margin-right: 8vw;
+    }
+  }

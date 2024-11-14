@@ -1,0 +1,323 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Define Gilroy font families */
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./assets/fonts/Gilroy-UltraLight.ttf') format('truetype'); /* Correct format */
+  font-weight: 100; /* Ultrathin */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./assets/fonts/Gilroy-Thin.ttf') format('truetype'); /* Correct format */
+  font-weight: 200; /* Thin */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./assets/fonts/Gilroy-Light.ttf') format('truetype'); /* Correct format */
+  font-weight: 300; /* Light */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./assets/fonts/Gilroy-Regular.ttf') format('truetype'); /* Correct format */
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./assets/fonts/Gilroy-Medium.ttf') format('truetype'); /* Correct format */
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./assets/fonts/Gilroy-SemiBold.ttf') format('truetype'); /* Correct format */
+  font-weight: 600; /* Semibold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./assets/fonts/Gilroy-Heavy.ttf') format('truetype'); /* Correct format */
+  font-weight: 800; /* Heavy */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MaziusReview';
+  src: url('./assets/fonts/MAZIUSREVIEW20.09-Extraitalic.otf') format('opentype');
+  font-weight: normal; /* Adjust as necessary */
+  font-style: italic;  /* Italic style */
+}
+::selection {
+  background-color: #01D5E0; /* Change to your preferred highlight color */
+  color: white; /* Change to your preferred text color */
+}
+
+/* Custom scrollbar styles for WebKit-based browsers */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #09090B; /* Make the track transparent */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #88EFB8; /* Semi-transparent color for the draggable part */
+  border-radius: 10px; /* Roundness of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(255, 255, 255); /* Darker color for the draggable part on hover */
+}
+
+/* Optional: Hide scrollbar for all browsers but keep functionality */
+.hidden-scrollbar {
+  overflow: auto; /* Enable scrolling */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+.hidden-scrollbar::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit browsers */
+}
+
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #88EFB8;
+  pointer-events: none;
+  mix-blend-mode: difference; 
+  box-shadow: 0 0 15px 5px rgba(136, 239, 184, 0.7); 
+  z-index: 9999;
+  transform: translate(-50%, -50%); 
+}
+
+
+
+/* Add this CSS to your global stylesheet or within a `<style>` tag in your component file */
+/* Add this CSS to your global stylesheet or within a `<style>` tag in your component file */
+@keyframes waterEffect {
+  0% {
+    background-position: 0% 0%;
+  }
+  5% {
+    background-position: 20% 10%;
+  }
+  10% {
+    background-position: 40% 15%;
+  }
+  15% {
+    background-position: 60% 20%;
+  }
+  20% {
+    background-position: 80% 25%;
+  }
+  25% {
+    background-position: 100% 30%;
+  }
+  30% {
+    background-position: 80% 50%;
+  }
+  35% {
+    background-position: 60% 70%;
+  }
+  40% {
+    background-position: 40% 80%;
+  }
+  45% {
+    background-position: 20% 90%;
+  }
+  50% {
+    background-position: 10% 80%;
+  }
+  55% {
+    background-position: 5% 60%;
+  }
+  60% {
+    background-position: 10% 40%;
+  }
+  65% {
+    background-position: 30% 30%;
+  }
+  70% {
+    background-position: 50% 40%;
+  }
+  75% {
+    background-position: 70% 60%;
+  }
+  80% {
+    background-position: 90% 80%;
+  }
+  85% {
+    background-position: 70% 90%;
+  }
+  90% {
+    background-position: 50% 70%;
+  }
+  95% {
+    background-position: 30% 50%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+
+.water-effect {
+  background:
+              linear-gradient(45deg, 
+                #88EFB8, 
+                #61E7C6, 
+                #30DFD2, 
+                #01D5E0, 
+                #01C8E7, 
+                #01BBEC, 
+                #05AFEC
+              );
+              background: radial-gradient(circle, 
+    #88EFB8 0%, 
+    #61E7C6 16.666%, 
+    #30DFD2 33.333%, 
+    #01D5E0 50%, 
+    #01C8E7 66.666%, 
+    #01BBEC 83.333%, 
+    #05AFEC 100%
+  );
+  background-size: 300% 300%, 100% 100%;
+  animation: waterEffect 8s infinite reverse;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text; /* For webkit browsers */
+  
+}
+
+
+
+@keyframes waterEffect {
+  0% {
+    background-position: 0% 0%;
+  }
+  5% {
+    background-position: 20% 10%;
+  }
+  10% {
+    background-position: 40% 15%;
+  }
+  15% {
+    background-position: 60% 20%;
+  }
+  20% {
+    background-position: 80% 25%;
+  }
+  25% {
+    background-position: 100% 30%;
+  }
+  30% {
+    background-position: 80% 50%;
+  }
+  35% {
+    background-position: 60% 70%;
+  }
+  40% {
+    background-position: 40% 80%;
+  }
+  45% {
+    background-position: 20% 90%;
+  }
+  50% {
+    background-position: 10% 80%;
+  }
+  55% {
+    background-position: 5% 60%;
+  }
+  60% {
+    background-position: 10% 40%;
+  }
+  65% {
+    background-position: 30% 30%;
+  }
+  70% {
+    background-position: 50% 40%;
+  }
+  75% {
+    background-position: 70% 60%;
+  }
+  80% {
+    background-position: 90% 80%;
+  }
+  85% {
+    background-position: 70% 90%;
+  }
+  90% {
+    background-position: 50% 70%;
+  }
+  95% {
+    background-position: 30% 50%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+
+.water-effect-div {
+  background:
+              linear-gradient(45deg, 
+                #88EFB8, 
+                #61E7C6, 
+                #30DFD2, 
+                #01D5E0, 
+                #01C8E7, 
+                #01BBEC, 
+                #05AFEC
+              );
+              background: radial-gradient(circle, 
+    #88EFB8 0%, 
+    #61E7C6 16.666%, 
+    #30DFD2 33.333%, 
+    #01D5E0 50%, 
+    #01C8E7 66.666%, 
+    #01BBEC 83.333%, 
+    #05AFEC 100%
+  );
+  background-size: 300% 300%, 100% 100%;
+  animation: waterEffect 8s infinite reverse;
+  color: transparent;
+   /* For webkit browsers */
+  
+}
+
+.custom-hover-effect {
+  background: #fff; /* Default background color */
+  color: #09090B; /* Default text color */
+}
+
+.custom-hover-effect:hover {
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 20%, rgba(0, 0, 0, 0) 80%);
+  color: #09090B; /* Change text color on hover */
+  font-size: 1.25rem; /* Increase font size on hover (text-xl equivalent) */
+}
+
+
+/* Tailwind CSS Directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+

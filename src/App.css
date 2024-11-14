@@ -1,0 +1,41 @@
+/* Color Palette */
+/* #562135 */
+/* #c3829e */
+/* #e9b1cd */
+/* #ffe7de */
+/* #fcd1d7 */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+#viewCountSection {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
+    
+  }
+  @keyframes blinkEye {
+    0%, 100% {
+      transform: scaleY(1);  /* Eye is open */
+    }
+    50% {
+      transform: scaleY(0.1); /* Eye is closed (flattened) */
+    }
+  }
+  
+  .eye-icon {
+    animation: blinkEye 2s infinite; /* Change duration for blink speed */
+  }
+  
+  @keyframes blinkText {
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  .view-count-blink {
+    animation: blinkText 1s infinite; /* Adjust for blinking text speed */
+  }
+  
