@@ -4,6 +4,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import './ScrollAnimation.css';
 import { useGSAP } from "@gsap/react";
 import emailjs from '@emailjs/browser';
+import reach from '../assets/reach.svg';
+import linkedin from '../assets/linkedin.png';
+import instagram from '../assets/instagram.png';
+import telegram from '../assets/telegram.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -98,7 +102,7 @@ const ScrollAnimation = () => {
           <div className="w-screen p-12 h-[90vh] mx-12 rounded-3xl inline bg-white items-center justify-center">
             <div className="text-[15vh] font-semibold font-gilroy flex items-center">
               REACH ME OUT
-              <img src="../assets/reach.svg" alt="Reach Logo" className="ml-4 h-[18vh]" />
+              <img src={reach} alt="Reach Logo" className="ml-4 h-[18vh]" />
             </div>
             
             {/* Page View Count Section */}
@@ -117,7 +121,7 @@ const ScrollAnimation = () => {
               {/* LinkedIn */}
               <a href="https://www.linkedin.com/in/pranav-311450262/" target="_blank" rel="noopener noreferrer">
                 <button className="flex items-center space-x-2 border-2 border-black rounded-full py-2 px-6">
-                  <img src="src/assets/linkedin.png" alt="LinkedIn Logo" className="h-6" />
+                  <img src={linkedin} alt="LinkedIn Logo" className="h-6" />
                   <span className="text-black">LinkedIn</span>
                 </button>
               </a>
@@ -125,7 +129,7 @@ const ScrollAnimation = () => {
               {/* Instagram */}
               <a href="https://www.instagram.com/prnv_1109/" target="_blank" rel="noopener noreferrer">
                 <button className="flex items-center space-x-2 border-2 border-black rounded-full py-2 px-6">
-                  <img src="src/assets/instagram.png" alt="Instagram Logo" className="h-6" />
+                  <img src={instagram} alt="Instagram Logo" className="h-6" />
                   <span className="text-black">Instagram</span>
                 </button>
               </a>
@@ -133,7 +137,7 @@ const ScrollAnimation = () => {
               {/* Telegram */}
               <a href="https://t.me/prnv_1109" target="_blank" rel="noopener noreferrer">
                 <button className="flex items-center space-x-2 border-2 border-black rounded-full py-2 px-6">
-                  <img src="src/assets/telegram.png" alt="Telegram Logo" className="h-6" />
+                  <img src={telegram} alt="Telegram Logo" className="h-6" />
                   <span className="text-black">Telegram</span>
                 </button>
               </a>
