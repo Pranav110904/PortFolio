@@ -45,8 +45,7 @@ const MoveToLaptopPage = () => {
       {/* Content that is visible when not on restricted devices */}
       {!isRestricted && (
         <div className="mt-20 text-center">
-          <h1 className="text-3xl font-bold">Welcome to the Website</h1>
-          {/* More content */}
+          
         </div>
       )}
     </div>
