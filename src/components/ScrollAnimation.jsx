@@ -106,13 +106,7 @@ const ScrollAnimation = () => {
             </div>
             
             {/* Page View Count Section */}
-            <div id="viewCountSection" className="flex items-center space-x-2">
-              {/* Eye Icon */}
-              <span className="text-[#00FFAB] text-3xl animate-pulse">👁️</span>
-              <h3 className="ml-1 text-lg">Page Views : 
-                <span className="view-count-blink"> {viewCount}</span>
-              </h3>
-            </div>
+            
 
 
             <div className="mt-[20vh] text-[5vh]">Here are my links...</div>
